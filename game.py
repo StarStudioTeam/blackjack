@@ -95,3 +95,8 @@ class Game:
 
         # Determine winner
         print("\n" + self.determine_winner())
+
+        # Additional: Show dealer's cards
+        print("\nDealer's hand:")
+        print(ascii_version_of_card(*self.dealer_hand))
+        print("Dealer's total:", self.calculate_hand_value(self.dealer_hand))
