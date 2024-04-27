@@ -25,7 +25,7 @@ def main():
         
         gameStart = Game()
 
-        gameStart._start_game()
+        gameStart.play_game()
     else:
         print("Exiting...")
 
