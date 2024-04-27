@@ -1,3 +1,6 @@
+from game import Game
+
+
 def main():
     print(f"""                                                                                          
                                                                ,---._                                  
@@ -19,7 +22,10 @@ def main():
     user_input = input("Press Enter to start or type 'exit' to close: ")
     if user_input.lower() != 'exit':
         print("Starting...")
-        # Add your main functionality here
+        
+        gameStart = Game()
+
+        gameStart._start_game()
     else:
         print("Exiting...")
 
